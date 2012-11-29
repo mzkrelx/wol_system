@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <target>
+        <name>teno</name>
+        <macaddr>40:61:86:cc:eb:03</macaddr>
+    </target>
+    <target>
+        <name>alto</name>
+        <macaddr>00:27:0E:02:AF:54</macaddr>
+    </target>
+    <target>
+        <name>dema</name>
+        <macaddr>00:1B:21:4C:91:91</macaddr>
+    </target>
+    <target>
+        <name>supp</name>
+        <macaddr>00:24:21:A1:C3:06</macaddr>
+    </target>
+</config>

@@ -1,0 +1,43 @@
+10
+
+dir
+3
+http://www.local.1-ideal.info/repos/wol-system/trunk
+http://www.local.1-ideal.info/repos/wol-system
+
+
+
+2011-05-08T13:04:40.248067Z
+3
+charles
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+3466e10e-9029-4ec7-8714-6a25e67c658e
+
+tests
+dir
+
+application
+dir
+
+library
+dir
+
+docs
+dir
+
+public
+dir
+

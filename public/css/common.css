@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/****************************
+  global
+ ****************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    text-align: center;
+    white-space: nowrap;
+}
+
+#content {
+    text-align: center;
+    padding: 20px;
+    min-height: 600px;
+}
+
+#footer {
+    text-align: center;
+    height: 40px;
+    text-align: right;
+}
+
+hr {
+    margin: 10px;
+}
+
+pre {
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    white-space: pre-wrap; /* CSS3 */
+    word-wrap: break-word; /* IE 5.5+ */
+}
+
+/****************************
+  in header
+ ****************************/
+div#title {
+    margin: 0 0 0; /* 上、左右、下 */
+    padding: 5px 5px; /* 上下、左右 */
+    background-color: #3AC1C4;
+    font-size: 130%;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 100%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+}
+
+/****************************
+  in content
+ ****************************/
+div.messageArea {
+    height: 50px;
+}
+div.messages {
+    padding: 15px;
+    background-color: #fff0d6;
+    border: solid 1px #ffd68e;
+        
+}
+div.messages p {
+    float: left;
+    margin-right: 20px;
+}
+
+table {
+    clear: both;
+    width: 530px;
+    border: 1px #E3E3E3 solid;
+    border-spacing: 0;
+    background: #D5F0F0 url(../image/bg_02.gif) repeat-x 0 100%;
+}
+
+table th {
+    padding: 5px;
+    border: #98DCDC solid;
+    border-width: 0 0 1px 1px;
+    background: #73CECE url(../image/bg_02_header.gif) repeat-x 0 100%;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 120%;
+    text-align: center;
+}
+table td {
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFFFFF #8ED9D9 #8ED9D9 #FFFFFF;
+    color: #1A4444;
+    text-align: center;
+}
+/****************************
+  in footer
+ ****************************/
+#footer p {
+    margin: 15px;
+}

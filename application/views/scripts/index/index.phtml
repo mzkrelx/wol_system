@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-script-type" content="text/jascript" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <title>Wake On Lan System</title>
+    <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl('/css/common.css') ?>" />
+    <script type="text/javascript" src="<?php echo $this->baseUrl('/js/common.js') ?>"></script>
+</head>
+
+<body>
+
+<!-- ヘッダーここから -->
+<div id="header">
+    <div id="title">
+        <div id="title">Wake On Lan System</div>
+    </div>
+</div>
+<!-- ヘッダーここまで -->
+
+<!-- コンテンツここから -->
+<div id="content">
+
+    <div class="messageArea">
+<?php if (count($this->flashMessages)): ?>
+        <div class="messages">
+    <?php foreach ($this->flashMessages as $flashMessage): ?>
+            <p class="clear"><?php echo $this->escape($flashMessage) ?></p>
+    <?php endforeach ?>
+            <p>
+                <a href="javascript:void(0)" onclick="hideMessageArea()">OK</a>
+            </p>
+        </div>
+<?php endif ?>
+    </div>
+
+    <table>
+        <tr>
+            <th>name</th>
+            <th>起動ボタン</th>
+        </tr>
+    <?php foreach ($this->targets->target as $target) : ?>
+        <tr>
+            <td><?php echo $target->name ?></td>
+            <td>
+                <a href="javascript:void(0)" onclick="confirmWol('<?php echo $this->baseUrl("/index/wol/macaddr/{$target->macaddr}/name/{$target->name}") ?>', '<?php echo $target->name ?>');">
+                    <img src="<?php echo $this->baseUrl('/image/power_off.png') ?>" alt="電源オン" width="16" height="16" />
+                </a>
+            </td>
+        </tr>
+    <?php endforeach; ?>
+    </table>
+</div>
+<!-- コンテンツここまで -->
+
+<!-- フッターここから -->
+<div id="footer">
+    <hr />
+    <p>Copyright &copy; 2011 Mizuki Yamanaka All Rights Reserved.</p>
+</div>
+<!-- フッターここまで -->
+
+</body>
+</html>

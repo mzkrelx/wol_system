@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/repos/wol-system/!svn/ver/2/trunk/public
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/wol-system/!svn/ver/2/trunk/public/.htaccess
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/wol-system/!svn/ver/5/trunk/public/index.php
+END
